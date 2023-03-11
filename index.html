@@ -7,6 +7,54 @@
     <title>JQuery</title>
 </head>
 <body>
-    
+
+    <h1 id="saludo">Hola Mundo!!!</h1>
+    <button id="saludarBtn">Saludar</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        
+        // document.getElementById('saludarBtn')
+        //     .addEventListener('click', ()=>{
+        //         document.getElementById('saludo')
+        //         .innerHTML = '<strong>Hola Ana!</strong>';
+        //     });
+
+        $(document).ready(()=>{
+            $('#saludarBtn').click(()=>{
+                $('#saludo').html('<strong>Hola Ana!</strong>');
+            });
+        });
+    </script>
+   
+   <!---- <script>
+        let lista = [9,8,7,6,5,4,3,2,1];
+        console.log('For 1-----------');
+
+        for (let index = 0 ; index<lista.length; index++){
+            const numero = lista[index];
+            console.log(numero);
+        }   
+
+        console.log('For in-----------');
+
+        for (let index in lista){
+            const numero = lista[index];
+            console.log(numero);
+        }   
+
+        console.log('For of-----------');
+
+        for (let numero of lista){
+            
+            console.log(numero);
+        }   
+
+        console.log('Foreach of------------------------');
+        lista.forEach((numero, index)=> {
+            console.log(index, numero);
+        });
+
+    </script> -->
 </body>
 </html>
